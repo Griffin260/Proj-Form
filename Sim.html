@@ -3,56 +3,10 @@
     <head>
         <meta lang="pt-br" charset="utf-8">
         <title>Simulador de emprestimos</title>
-        <script type="text/javascript">
-            function validar(){
-                var nome = formuser.nome.value;
-                var email = formuser.email.value;
-                var fone = formuser.fone.value;
-                var valor = formuser.valor.value;
-                var parcela = formuser.parcela.value;
-
-                if(nome == ""){
-                    alert('preencha o campo Nome!');
-                    formeuser.nome.focus();
-                    return false;
-                }
-
-                if(email == ""  || email.indexOf('@') == -1 ){
-                    alert('preencha o campo E_mail!');
-                    formeuser.email.focus();
-                    return false;  
-                }
-
-                if(fone == ""){
-                    alert('preencha o campo Telefone!');
-                    formeuser.fone.focus();
-                    return false;  
-                }
-
-                if(valor == ""){
-                    alert('Preencha o campo Valor Desejado!');
-                    formeuser.valor.focus();
-                    return false;  
-                     }else if( valor < 1000){
-                        alert('O valor minimo R$1000!');
-                            }else if ( valor > 10000){
-                                 alert('O valor maximo  R$10000!');
-                            }
-                      
-                if(parcela == ""){
-                    alert('Preencha o campo Valor da parcela!');
-                    formeuser.valor.focus();
-                    return false;  
-                     }else if( parcela < 2){
-                        alert('Numero de minimo parcelas 2 vezes!');
-                            }else if ( parcela > 24){
-                                 alert('Numero de maximo de parcelas 24vezes!');
-                            }         
-            }
-        </script>
-
-
+        <script src="functions.js"/>
+        <link rel="stylesheet" type="text/css" href="/style.css" />
     </head>
+
     <body class="bg">
         <div class="body">
             <br>
@@ -80,57 +34,4 @@
             
         </div>
     </body>
-
-    <style>
-        .body{
-            background-color: white;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 0;
-            margin-bottom: 0;
-            border-width: 5px;
-            border-radius: 30px;
-            
-        }
-        .bg{
-            background: #004098;
-            background: -moz-linear-gradient(-45deg, #004098 0%, #005CDB 41%, #006BFF 100%);
-            background: -webkit-linear-gradient(-45deg, #004098 0%, #005CDB 41%, #006BFF 100%);
-            background: linear-gradient(135deg, #004098 0%, #005CDB 41%, #006BFF 100%);
-        }
-        
-        .title {
-            text-align: center;
-            font-size: 30pt;
-            font-weight: 5px;
-            color: rgba(7, 7, 199, 0.822);
-        }
-
-        .form{
-            align-self: center;
-            margin-left: 25%;
-            margin-right: 25%;
-            background-color: blue;
-            font-size: 14pt;
-            color: white;
-            padding: 30px;
-            padding-left: 119px;
-            border-radius: 30px;
-            box-shadow: 5px 5px 16px 3px rgba(0,0,0,0.21);
-            
-        }
-
-        .button{
-            margin-left:24%;
-            background: #0261e7;
-
-            color: white; 
-            font-size: 15pt; 
-            line-height: 14px; 
-            padding: 9px; 
-            border-radius: 9px; 
-            border-color: hsl(0, 0%, 100%);
-            display: inline-block;
-        }
-    </style>
 </html>
