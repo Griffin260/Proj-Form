@@ -1,7 +1,57 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta lang="pt-br" charset="utf-8">
         <title>Simulador de emprestimos</title>
+        <script type="text/javascript">
+            function validar(){
+                var nome = formuser.nome.value;
+                var email = formuser.email.value;
+                var fone = formuser.fone.value;
+                var valor = formuser.valor.value;
+                var parcela = formuser.parcela.value;
+
+                if(nome == ""){
+                    alert('preencha o campo Nome!');
+                    formeuser.nome.focus();
+                    return false;
+                }
+
+                if(email == ""  || email.indexOf('@') == -1 ){
+                    alert('preencha o campo E_mail!');
+                    formeuser.email.focus();
+                    return false;  
+                }
+
+                if(fone == ""){
+                    alert('preencha o campo Telefone!');
+                    formeuser.fone.focus();
+                    return false;  
+                }
+
+                if(valor == ""){
+                    alert('Preencha o campo Valor Desejado!');
+                    formeuser.valor.focus();
+                    return false;  
+                     }else if( valor < 1000){
+                        alert('O valor minimo R$1000!');
+                            }else if ( valor > 10000){
+                                 alert('O valor maximo  R$10000!');
+                            }
+                      
+                if(parcela == ""){
+                    alert('Preencha o campo Valor da parcela!');
+                    formeuser.valor.focus();
+                    return false;  
+                     }else if( parcela < 2){
+                        alert('Numero de minimo parcelas 2 vezes!');
+                            }else if ( parcela > 24){
+                                 alert('Numero de maximo de parcelas 24vezes!');
+                            }         
+            }
+        </script>
+
+
     </head>
     <body class="bg">
         <div class="body">
@@ -13,20 +63,20 @@
 
             <div class="form"> 
 
-                <form action="">
-                    <h4 style="padding-left: 2cm;">Insira seus dados:</h4>
-                    Nome: <input type="text" name="nome" id="nome" size="30" placeholder="Ex: João da Costa"> <br>
-                    E-mail: <input type="email" name="email" id="email" size="29" placeholder="example@email.com"> <br>
-                    Fone: <input type="text" name="fone" id="fone" size="31" placeholder="51990909090"> <br>
-                    Valor desejado: <input type="number" name="valor" id="valor" size="5" placeholder="min=1000 max=100000"> <br>
-                    Nº de parcela: <input type="number" name="parcela" id="parcela" size="20" placeholder="Até 24x"> <br>
+                <form name="formuser" action="Simular.php" method="POST">
+                    <h4 style="padding-left: 2cm;">Insira seus dados:</h4> <!--Cara tira essa linha daqui--> 
+                    Nome: <input type="text" name="nome" id="nome" size="30" placeholder="Ex: João da Costa"> <br>               <!--Poderiamos validar com HTML5 com "REQUIRED"-->
+                    E-Mail: <input type="email" name="email" id="email" size="29" placeholder="example@email.com"> <br>          <!--Poderiamos validar com HTML5 com "REQUIRED"-->
+                    Fone: <input type="number" name="fone" id="fone" size="31" placeholder="51990909090"> <br>                   <!--Poderiamos validar com HTML5 com "REQUIRED"-->
+                    Valor Desejado: <input type="number" name="valor" id="valor" size="5" placeholder="min=1000 max=100000"> <br><!--Poderiamos validar com HTML5 com "REQUIRED"-->
+                    Nº de Parcela: <input type="number" name="parcela" id="parcela" size="20" placeholder="Até 24x"> <br>        <!--Poderiamos validar com HTML5 com "REQUIRED""-->
                     <br> <br>
-                    <button class="button">SIMULAR</button>
+                    <input type="submit" onclick="return validar()">
                 </form>
 
             </div>
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
             
         </div>
     </body>
