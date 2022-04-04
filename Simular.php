@@ -3,10 +3,11 @@
  $EMail = $_POST["email"];
  $Fone = $_POST["fone"];
  $Valor Desejado = $_POST["valor"];
- $Nº de Parcela = $_POST["parcela"];
- $Vparcela=($nota1+$nota2)/2;
- $resultado=($nota1+$nota2)/2;
-
- echo "A sua Media ficou em : ".$Vparcela;
+ $N_parcela = $_POST["parcela"];
+ $Vparcela = $Valor / $N_parcela;
+ $resultado=($xxxxxxxxxxxxxnota1+$nota2)/2;
+ 
+ echo "valor da parcela : ".$Vparcela;
+ echo "valor Desejado : ".$Vparcela;
  echo "A sua Media ficou em : ".$Vparcela;
 ?>
