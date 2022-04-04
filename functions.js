@@ -38,7 +38,7 @@ function validar(){
         alert('Preencha o campo Valor da parcela!');
         formeuser.valor.focus();
         return false;  
-         }else if( parcela < 2){
+         }else if( parcela < 1){
             alert('Numero de minimo parcelas 2 vezes!');
                 }else if ( parcela > 24){
                      alert('Numero de maximo de parcelas 24vezes!');
