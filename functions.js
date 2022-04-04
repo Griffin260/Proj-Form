@@ -26,29 +26,28 @@ function validar() {
     if (valor == "") {
         alert('Preencha o campo Valor Desejado!');
         formeuser.valor.focus();
-        return false;  
-            
-            else if (valor < 1000) {
-            alert('O valor minimo R$1000!');
+        return false;
 
-                else if (valor > 10000) {
-                alert('O valor maximo  R$10000!');
-            }
+        if (valor < 1000) {
+            alert('O valor minimo R$1000!');
+        }
+
+        if (valor > 10000) {
+            alert('O valor maximo  R$10000!');
         }
     }
-
 
     if (parcela == "") {
         alert('Preencha o campo Valor da parcela!');
         formeuser.valor.focus();
-        return false;  
+        return false;
 
-            else if (parcela < 2) {
+        if (parcela < 2) {
             alert('Numero de minimo parcelas 2 vezes!');
+        }
 
-                else if (parcela > 24) {
-                alert('Numero de maximo de parcelas 24vezes!');
-            }
+        if (parcela > 24) {
+            alert('Numero de maximo de parcelas 24vezes!');
         }
     }
 }
