@@ -8,25 +8,21 @@ function validar(){
 
     if(nome == ""){
         alert('preencha o campo Nome!');
-        formeuser.nome.focus();
         return false;
     }
 
     if(email == ""  || email.indexOf('@') == -1 ){
         alert('preencha o campo E_mail!');
-        formeuser.email.focus();
         return false;  
     }
 
     if(fone == ""){
         alert('preencha o campo Telefone!');
-        formeuser.fone.focus();
         return false;  
     }
 
     if(valor == ""){
         alert('Preencha o campo Valor Desejado!');
-        formeuser.valor.focus();
         return false;  
          }else if( valor < 1000){
             alert('O valor minimo R$1000!');
@@ -36,7 +32,6 @@ function validar(){
           
     if(parcela == ""){
         alert('Preencha o campo Valor da parcela!');
-        formeuser.valor.focus();
         return false;  
          }else if( parcela < 1){
             alert('Numero de minimo parcelas 2 vezes!');
