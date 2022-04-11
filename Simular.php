@@ -26,7 +26,8 @@ echo "<tr>
       </tr>";
     //etapa 5 (laço de repetição para preencher os campos)
      
-      for ($col=1; $col <= $parcela; $col++) { 
+
+      for ($col=$parcela; $col <= 24; $col++) { 
              //obter o valor da parcela
              $valorDaParcela = $valor/$col;
 
@@ -40,11 +41,9 @@ echo "<tr>
             echo "<tr>
                     <td>$col x</td>
                     <td>$novoValorDaParcela </td>
-                    <td>$valorTotalGeral </td>
-                    
+                    <td>$valorTotalGeral </td>    
                  </tr>";
 		}
-
 echo "</table>";
 ?>
 </body>
