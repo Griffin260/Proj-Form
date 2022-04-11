@@ -3,9 +3,9 @@
  <head>
      <meta charset="utf-8"/>
      <title>Simulação</title>
+     <?php include ("style.php");?>
 </head>
-<body>  
-
+<body class="bg">  
 <?php
  $nome = $_POST["nome"];
  $email = $_POST["email"];
@@ -24,8 +24,8 @@ echo "<tr>
          <th>VALOR DA PARCELA (R$)</th>
          <th>TOTAL (R$)</th>
       </tr>";
+
     //etapa 5 (laço de repetição para preencher os campos)
-     
 
       for ($col=$parcela; $col <= 24; $col++) { 
              //obter o valor da parcela
