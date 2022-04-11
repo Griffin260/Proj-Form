@@ -37,10 +37,11 @@ echo "<tr>
              //valor total do emprestimo
              // $valorTotalGeral = $col*$novoValorDaParcela;
              $valorTotalGeral =$novoValorDaParcela*$col;
+             $novoValorDaParcela = number_format($novoValorDaParcela, 2, ".", ",");
             
             echo "<tr>
                     <td>$col x</td>
-                    <td>$novoValorDaParcela </td>
+                    <td>$novoValorDaParcela</td>
                     <td>$valorTotalGeral </td>    
                  </tr>";
 		}
