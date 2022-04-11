@@ -1,4 +1,3 @@
-
 function validar(){
     var nome = formuser.nome.value;
     var email = formuser.email.value;
