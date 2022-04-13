@@ -11,8 +11,13 @@
     }
     .bg{
         background: #004098;
+        background: -moz-linear-gradient(-45deg, #004098 0%, #005CDB 41%, #006BFF 100%);
+        background: -webkit-linear-gradient(-45deg, #004098 0%, #005CDB 41%, #006BFF 100%);
+        background: linear-gradient(135deg, #004098 0%, #005CDB 41%, #006BFF 100%);
+        background-repeat: no-repeat;
         color: white;
         padding-left: 32%;
+        margin-bottom: 17%;
     }
 
     .title {
@@ -33,13 +38,11 @@
         padding-left: 119px;
         border-radius: 30px;
         box-shadow: 5px 5px 16px 3px rgba(0,0,0,0.21);
-        
     }
 
     .button{
         margin-left:24%;
         background: #0261e7;
-
         color: white; 
         font-size: 15pt; 
         line-height: 14px; 

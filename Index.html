@@ -4,7 +4,7 @@
         <meta lang="pt-br" charset="utf-8">
         <title>Simulador de emprestimos</title>
         <script src="functions.js"></script>
-        <link rel="stylesheet" type="text/css" href="/style.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
 
     </head>
 
@@ -18,12 +18,12 @@
 
             <div class="form"> 
                 <form name="formuser" action="Simular.php" method="POST">
-                    <h4 style="padding-left: 2cm;">Insira seus dados:</h4> <!--Cara tira essa linha daqui--> 
-                    Nome: <input type="text" name="nome" id="nome" size="30" placeholder="Ex: João da Costa"> <br>               <!--Poderiamos validar com HTML5 com "REQUIRED"-->
-                    E-Mail: <input type="email" name="email" id="email" size="29" placeholder="example@email.com"> <br>          <!--Poderiamos validar com HTML5 com "REQUIRED"-->
-                    Fone: <input type="number" name="fone" id="fone" size="31" placeholder="51990909090"> <br>                   <!--Poderiamos validar com HTML5 com "REQUIRED"-->
-                    Valor Desejado: <input type="number" name="valor" id="valor" size="5" placeholder="min=1.000 max=100.000"> <br><!--Poderiamos validar com HTML5 com "REQUIRED"-->
-                    Nº de Parcela: <input type="number" name="parcela" id="parcela" size="20" placeholder="Até 24x"> <br>        <!--Poderiamos validar com HTML5 com "REQUIRED""-->
+                    <h4 style="padding-left: 2cm;">Insira seus dados:</h4> 
+                    Nome: <input type="text" name="nome" id="nome" size="30" placeholder="Ex: João da Costa"> <br>              
+                    E-Mail: <input type="email" name="email" id="email" size="29" placeholder="example@email.com"> <br> 
+                    Fone: <input type="number" name="fone" id="fone" size="31" placeholder="51990909090"> <br>  
+                    Valor Desejado: <input type="number" name="valor" id="valor" size="5" placeholder="min=1.000 max=100.000"> <br>
+                    Nº de Parcela: <input type="number" name="parcela" id="parcela" size="20" placeholder="Até 24x"> <br>
                     <br> <br>
                     <input class="button" type="submit" onclick="return validar()">
                 </form>
@@ -32,63 +32,6 @@
             <br><br><br><br><br><br><br><br><br><br><br><br>
             
         </div>
-
-     </body>
-    
-     <style>
-        .body{
-            background-color: white;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 0;
-            margin-bottom: 0;
-            border-width: 5px;
-            border-radius: 30px;
-            
-        }
-        .bg{
-            background: #004098;
-            background: -moz-linear-gradient(-45deg, #004098 0%, #005CDB 41%, #006BFF 100%);
-            background: -webkit-linear-gradient(-45deg, #004098 0%, #005CDB 41%, #006BFF 100%);
-            background: linear-gradient(135deg, #004098 0%, #005CDB 41%, #006BFF 100%);
-        }
-        
-        .title {
-            text-align: center;
-            font-size: 30pt;
-            font-weight: 5px;
-            color: rgba(7, 7, 199, 0.822);
-        }
-
-        .form{
-            align-self: center;
-            margin-left: 25%;
-            margin-right: 25%;
-            background-color: blue;
-            font-size: 14pt;
-            color: white;
-            padding: 30px;
-            padding-left: 119px;
-            border-radius: 30px;
-            box-shadow: 5px 5px 16px 3px rgba(0,0,0,0.21);
-            
-        }
-
-        .button{
-            margin-left:24%;
-            background: #0261e7;
-
-            color: white; 
-            font-size: 15pt; 
-            line-height: 14px; 
-            padding: 9px; 
-            border-radius: 9px; 
-            border-color: hsl(0, 0%, 100%);
-            display: inline-block;
-        }
-      
-    
-    </style>
 
     </body>
 

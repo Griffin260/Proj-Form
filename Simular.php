@@ -12,6 +12,7 @@
  $fone = $_POST["fone"];
  $valor = $_POST["valor"];
  $parcela = $_POST["parcela"];
+ echo "<br>";
  echo "Nome do Cliente : ".$nome."<br/> E-mail :".$email."<br/>";
  echo "Telefone Para Contato : ".$fone."<br/> Valor Desejado :".$valor."<br/>";
  echo "Numero de Parcelas Desejadas : ".$parcela."<br/>";
